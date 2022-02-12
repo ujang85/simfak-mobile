@@ -90,6 +90,7 @@ $config = [
                 'debug/*',
                 'gii/*',
                 'aduan-gedung/*',
+                'alat-rs/*',
             //    'mimin/*',
             //    'mimin/user', // only in dev mode
                 

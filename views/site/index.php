@@ -1,6 +1,7 @@
 <?php
 
 use rce\material\widgets\Card;
+use yii\helpers\Url;
 /* @var $this yii\web\View */
 
 $this->title = 'SIMFAK MOBILE';
@@ -22,8 +23,7 @@ $this->title = 'SIMFAK MOBILE';
                     'type'=>'card-stats',
                     'icon'=>'<i class="material-icons">content_copy</i>',
                     'color'=>'danger',
-                    'subtitle'=>'
-                    <h5><a href="javascript:;">LIST EQUIPMENTS</a></h5>',
+                    'subtitle'=>'<h5><a href="index.php?r=alat-rs/lap_aset_medis">LIST EQUIPMENT </a></h5>',
                     'footer'=>'<div class="stats">
                           </div>',
                 ]); Card::end(); ?>
@@ -34,8 +34,7 @@ $this->title = 'SIMFAK MOBILE';
                     'type'=>'card-stats',
                     'icon'=>'<i class="material-icons">build</i>',
                     'color'=>'warning',
-                    'subtitle'=>'
-                    <h5><a href="javascript:;">KURATIVE MAINTENANCE</a></h5>',
+                    'subtitle'=>'<h5><a href="index.php?r=aduan/create">PREVENTIVE MAINTENANCE</a></h5>',
                     'footer'=>'<div class="stats">
                           </div>',
                 ]); Card::end(); ?>
