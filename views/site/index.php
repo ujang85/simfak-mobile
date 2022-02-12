@@ -7,10 +7,10 @@ $this->title = 'SIMFAK MOBILE';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <center><h1>SIMFAK-MOBILE</h1>
+    
+        <center><h2>SIMFAK-MOBILE</h2>
     </center>
-    </div>
+   
 
     <div class="body-content">
 
