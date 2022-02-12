@@ -34,7 +34,7 @@ $this->title = 'SIMFAK MOBILE';
                     'type'=>'card-stats',
                     'icon'=>'<i class="material-icons">build</i>',
                     'color'=>'warning',
-                    'subtitle'=>'<h5><a href="index.php?r=aduan/create">PREVENTIVE MAINTENANCE</a></h5>',
+                    'subtitle'=>'<h5><a href="index.php?r=pm/create">PREVENTIVE MAINTENANCE</a></h5>',
                     'footer'=>'<div class="stats">
                           </div>',
                 ]); Card::end(); ?>

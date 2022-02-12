@@ -8,20 +8,24 @@ use Yii;
  * This is the model class for table "pm".
  *
  * @property int $id_pm
- * @property string $nomor_pm
- * @property string $uraian_pm
- * @property string $id_inven
- * @property string $terjadwal_pm
- * @property string $tgl_pm
- * @property string $tgl_pm_berikut
- * @property string $teknisi
- * @property int $kondisi_alat
- * @property string $garansi_pm
- * @property int $masa_garansi_pm
- * @property int $periode_garansi
- * @property int $konversi_garansi
- * @property int $hapus
- * @property string $kode_pm
+ * @property string|null $nomor_pm
+ * @property string|null $uraian_pm
+ * @property string|null $id_inven
+ * @property string|null $terjadwal_pm
+ * @property string|null $tgl_pm
+ * @property string|null $tgl_pm_berikut
+ * @property string|null $teknisi
+ * @property int|null $kondisi_alat
+ * @property string|null $garansi_pm
+ * @property int|null $masa_garansi_pm
+ * @property int|null $periode_garansi
+ * @property int|null $konversi_garansi
+ * @property int|null $hapus
+ * @property string|null $kode_pm
+ * @property int|null $id_pengguna
+ * @property int|null $group_id
+ * @property int|null $id_alat
+ * @property int|null $thn_pm
  */
 class Pm extends \yii\db\ActiveRecord
 {
@@ -39,8 +43,8 @@ class Pm extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_pengguna','terjadwal_pm', 'tgl_pm', 'tgl_pm_berikut', 'garansi_pm'], 'safe'],
-            [['kondisi_alat','id_pengguna', 'masa_garansi_pm', 'periode_garansi', 'konversi_garansi', 'hapus'], 'integer'],
+            [['terjadwal_pm', 'tgl_pm', 'tgl_pm_berikut', 'garansi_pm'], 'safe'],
+            [['kondisi_alat', 'masa_garansi_pm', 'periode_garansi', 'konversi_garansi', 'hapus', 'id_pengguna', 'group_id', 'id_alat', 'thn_pm'], 'integer'],
             [['nomor_pm'], 'string', 'max' => 15],
             [['uraian_pm', 'teknisi'], 'string', 'max' => 200],
             [['id_inven'], 'string', 'max' => 20],
@@ -54,21 +58,25 @@ class Pm extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id_pm' => 'Id Pm',
-            'nomor_pm' => 'Nomor Pm',
-            'uraian_pm' => 'Uraian Pm',
-            'id_inven' => 'Id Inven',
-            'terjadwal_pm' => 'Terjadwal Pm',
-            'tgl_pm' => 'Tgl Pm',
-            'tgl_pm_berikut' => 'Tgl Pm Berikut',
-            'teknisi' => 'Teknisi',
-            'kondisi_alat' => 'Kondisi Alat',
-            'garansi_pm' => 'Garansi Pm',
-            'masa_garansi_pm' => 'Masa Garansi Pm',
-            'periode_garansi' => 'Periode Garansi',
-            'konversi_garansi' => 'Konversi Garansi',
-            'hapus' => 'Hapus',
-            'kode_pm' => 'Kode Pm',
+            'id_pm' => Yii::t('app', 'Id Pm'),
+            'nomor_pm' => Yii::t('app', 'Nomor Pm'),
+            'uraian_pm' => Yii::t('app', 'Uraian Pm'),
+            'id_inven' => Yii::t('app', 'Id Inven'),
+            'terjadwal_pm' => Yii::t('app', 'Terjadwal Pm'),
+            'tgl_pm' => Yii::t('app', 'Tgl Pm'),
+            'tgl_pm_berikut' => Yii::t('app', 'Tgl Pm Berikut'),
+            'teknisi' => Yii::t('app', 'Teknisi'),
+            'kondisi_alat' => Yii::t('app', 'Kondisi Alat'),
+            'garansi_pm' => Yii::t('app', 'Garansi Pm'),
+            'masa_garansi_pm' => Yii::t('app', 'Masa Garansi Pm'),
+            'periode_garansi' => Yii::t('app', 'Periode Garansi'),
+            'konversi_garansi' => Yii::t('app', 'Konversi Garansi'),
+            'hapus' => Yii::t('app', 'Hapus'),
+            'kode_pm' => Yii::t('app', 'Kode Pm'),
+            'id_pengguna' => Yii::t('app', 'Id Pengguna'),
+            'group_id' => Yii::t('app', 'Group ID'),
+            'id_alat' => Yii::t('app', 'Id Alat'),
+            'thn_pm' => Yii::t('app', 'Thn Pm'),
         ];
     }
 
