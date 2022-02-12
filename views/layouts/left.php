@@ -20,6 +20,7 @@ use yii\helpers\Html;
             'items' => [
                 ['label' => 'Dashboard', 'icon' => 'dashboard', 'url' => ['/']],
                 ['label' => 'Informasi', 'icon' => 'table_chart', 'url' => ""],
+                ['label' => 'Logout', 'url' => ['site/logout'],'data-method'=>'post'],
             ]
         ]); ?>    
     </div>
