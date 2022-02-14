@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13aef19efe1e0757ce47f3c48331056f",
+    "content-hash": "dd56dd42fc978dc737e3136d7b2c9fbc",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -2756,6 +2756,52 @@
             "time": "2018-10-09T17:40:19+00:00"
         },
         {
+            "name": "mdq/yii2-instascan-widget",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mariodro/yii2-instascan-widget.git",
+                "reference": "9255c38c615079c692cd72876b38b5db59e811fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mariodro/yii2-instascan-widget/zipball/9255c38c615079c692cd72876b38b5db59e811fa",
+                "reference": "9255c38c615079c692cd72876b38b5db59e811fa",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "mdq\\instascan\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mario Droguett",
+                    "email": "mariodro@hotmail.com"
+                }
+            ],
+            "description": "Yii2 widget for reading qr code using instascan pluggin",
+            "keywords": [
+                "extension",
+                "instascan",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/mariodro/yii2-instascan-widget/issues",
+                "source": "https://github.com/mariodro/yii2-instascan-widget/tree/master"
+            },
+            "time": "2019-02-22T19:17:04+00:00"
+        },
+        {
             "name": "mervick/material-design-icons",
             "version": "1.1.0",
             "source": {
@@ -2986,6 +3032,54 @@
                 }
             ],
             "time": "2020-11-13T09:40:50+00:00"
+        },
+        {
+            "name": "odaialali/yii2-qrcode-reader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/odai-alali/yii2-qrcode-reader.git",
+                "reference": "961000881aad895132f7145f8782c66e24db6b6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/odai-alali/yii2-qrcode-reader/zipball/961000881aad895132f7145f8782c66e24db6b6e",
+                "reference": "961000881aad895132f7145f8782c66e24db6b6e",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "odaialali\\qrcodereader\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Odai Alali",
+                    "email": "odai.alali@gmail.com"
+                }
+            ],
+            "description": "Yii2 widget for reading qr code using laptop or phone camera",
+            "keywords": [
+                "extension",
+                "javascript",
+                "qrcode",
+                "reader",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/odai-alali/yii2-qrcode-reader/issues",
+                "source": "https://github.com/odai-alali/yii2-qrcode-reader/tree/master"
+            },
+            "time": "2017-05-05T09:17:38+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -7609,17 +7703,16 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "kartik-v/yii2-builder": 20,
         "kartik-v/yii2-number": 20,
         "kartik-v/yii2-widget-datepicker": 20,
         "kartik-v/yii2-widget-select2": 20,
         "kartik-v/yii2-widget-timepicker": 20,
-        "kartik-v/yii2-mpdf": 20,
-        "deyraka/yii2-material-dashboard": 10
+        "kartik-v/yii2-mpdf": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.4.0"

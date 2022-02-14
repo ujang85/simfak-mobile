@@ -12,7 +12,8 @@
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
     },
-    "minimum-stability": "stable",
+    "minimum-stability":"dev",
+    "prefer-stable":true,
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.14",
@@ -29,7 +30,9 @@
 	"kartik-v/yii2-mpdf": "dev-master",
         "hscstudio/yii2-mimin": "~1.1.5",
         "ricar2ce/yii2-material-theme": "*",
-        "deyraka/yii2-material-dashboard": "v1.0.0-beta"
+        "deyraka/yii2-material-dashboard": "v1.0.0-beta",
+        "odaialali/yii2-qrcode-reader": "*",
+        "mdq/yii2-instascan-widget": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -40,6 +43,7 @@
         "codeception/verify": "~0.4.0",
         "codeception/specify": "~0.4.6",
         "symfony/browser-kit": ">=2.7 <=4.2.4"
+
     },
     "config": {
         "process-timeout": 1800,
