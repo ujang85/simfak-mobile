@@ -32,7 +32,8 @@
         "ricar2ce/yii2-material-theme": "*",
         "deyraka/yii2-material-dashboard": "v1.0.0-beta",
         "odaialali/yii2-qrcode-reader": "*",
-        "mdq/yii2-instascan-widget": "*"
+        "mdq/yii2-instascan-widget": "*",
+        "mpdf/qrcode": "^1.2"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
