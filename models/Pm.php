@@ -29,6 +29,11 @@ use Yii;
  */
 class Pm extends \yii\db\ActiveRecord
 {
+    public $nama_alat;
+    public $kode_group;
+    public $merk_type;
+    public $no_seri;
+    public $lokasi_brg;
     /**
      * {@inheritdoc}
      */

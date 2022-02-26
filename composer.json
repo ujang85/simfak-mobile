@@ -21,6 +21,7 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "dmstr/yii2-adminlte-asset": "^2.1",
         "johnitvn/yii2-ajaxcrud": "*",
+        "hoaaah/yii2-ajaxcrud-bs4": "*",
         "kartik-v/yii2-builder": "@dev",
         "kartik-v/yii2-number": "dev-master",
         "kartik-v/yii2-widget-datepicker": "dev-master",
@@ -33,7 +34,8 @@
         "deyraka/yii2-material-dashboard": "v1.0.0-beta",
         "odaialali/yii2-qrcode-reader": "*",
         "mdq/yii2-instascan-widget": "*",
-        "mpdf/qrcode": "^1.2"
+        "mpdf/qrcode": "^1.2",
+        "2amigos/qrcode-library": "~1.1"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

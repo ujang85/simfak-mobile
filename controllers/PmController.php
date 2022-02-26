@@ -3,12 +3,15 @@
 namespace app\controllers;
 
 use Yii;
+use app\models\AlatRs;
 use app\models\Pm;
 use app\models\PmSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use Da\QrCode\QrCode;
+use yii\web\Response;
+use yii\helpers\Json;
 /**
  * PmController implements the CRUD actions for Pm model.
  */
@@ -95,6 +98,34 @@ class PmController extends Controller
         ]);
     }
 
+    public function actionQrcode()
+    {
+           
+            Yii::$app->response->format = yii\web\Response::FORMAT_RAW;
+         //   Yii::$app->response->format = Response::FORMAT_RAW;
+            $qrCode = (new QrCode('1'))
+            ->setSize(50)
+            ->setMargin(5);
+         //   ->useForegroundColor(51, 153, 255);
+
+        // now we can display the qrcode in many ways
+        // saving the result to a file:
+
+            $qrCode->writeFile(__DIR__ . '/code.png'); // writer defaults to PNG when none is specified
+
+            // display directly to the browser 
+          //  header('Content-Type:image/png'.$qrCode->getContentType());
+          //  echo $qrCode->writeString();
+             header('Content-Type:image/png');
+            echo $qrCode->writeString();
+    }
+
+    public function actionGetAlat($alatId)
+    {   
+        $KodeAlat=AlatRs::find()->where(['kode_alat'=>$alatId])->one();
+        echo Json::encode($KodeAlat);
+        exit;
+    }
     /**
      * Deletes an existing Pm model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
