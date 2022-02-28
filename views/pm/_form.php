@@ -39,6 +39,7 @@ use yii\widgets\ActiveForm;
                     // Handle on success condition with the decoded message.
                 //    console.log(`Scan result ${decodedText}`, decodedResult);
                 document.getElementById("id-input").value = decodedText;
+                $('#id-input').focus();
                 }
             }
 
