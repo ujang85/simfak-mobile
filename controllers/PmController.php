@@ -104,7 +104,7 @@ class PmController extends Controller
             Yii::$app->response->format = yii\web\Response::FORMAT_RAW;
          //   Yii::$app->response->format = Response::FORMAT_RAW;
             $qrCode = (new QrCode('12'))
-            ->setSize(50)
+            ->setSize(60)
             ->setMargin(5);
          //   ->useForegroundColor(51, 153, 255);
 

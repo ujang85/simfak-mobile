@@ -13,7 +13,7 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
     <div>
-    <div id="qr-reader" style="width:400px"></div>
+    <div id="qr-reader" style="width:300px"></div>
     <div id="qr-reader-results"></div>
     </div>
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
@@ -44,7 +44,7 @@ use yii\widgets\ActiveForm;
             }
 
             var html5QrcodeScanner = new Html5QrcodeScanner(
-                "qr-reader", { fps: 10, qrbox: 250 });
+                "qr-reader", { fps: 10, qrbox: 150 });
             html5QrcodeScanner.render(onScanSuccess);
         });
     </script>
